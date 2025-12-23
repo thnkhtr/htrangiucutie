@@ -229,8 +229,8 @@
         }
 
         function createPhotos() {
-            const geo = new THREE.PlaneGeometry(10, 8);
-            const borderGeo = new THREE.PlaneGeometry(11, 9); 
+            const geo = new THREE.PlaneGeometry(12, 8);
+            const borderGeo = new THREE.PlaneGeometry(13, 9); 
             const borderMat = new THREE.MeshBasicMaterial({ color: 0xFFD700 }); 
             for(let i=0; i<5; i++) {
                 const mat = new THREE.MeshBasicMaterial({ map: photoTextures[i], side: THREE.DoubleSide });
