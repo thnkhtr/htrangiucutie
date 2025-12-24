@@ -248,7 +248,7 @@
             const canvas = document.createElement('canvas');
             canvas.width = 1024; canvas.height = 256;
             const ctx = canvas.getContext('2d');
-            ctx.font = 'bold italic 80px "Times New Roman"';
+            ctx.font = 'bold italic 90px "Times New Roman"';
             ctx.fillStyle = '#FFD700'; ctx.textAlign = 'center';
             ctx.shadowColor = "#FF0000"; ctx.shadowBlur = 40; 
             ctx.fillText("MERRY CHRISTMAS", 512, 130);
@@ -278,13 +278,13 @@
             const loveCanvas = document.createElement('canvas');
             loveCanvas.width = 1024; loveCanvas.height = 256;
             const lCtx = loveCanvas.getContext('2d');
-            lCtx.font = 'bold 120px "Segoe UI", sans-serif';
+            lCtx.font = 'bold 100px "Segoe UI", sans-serif';
             lCtx.fillStyle = '#FF69B4'; lCtx.textAlign = 'center';
             lCtx.shadowColor = "#FF1493"; lCtx.shadowBlur = 40; 
-            lCtx.fillText("Anh Yêu Htrang ❤️", 512, 130);
+            lCtx.fillText("Anh Yêu Htrang ❤️", 1000, 130);
             const loveTex = new THREE.CanvasTexture(loveCanvas);
             const loveMat = new THREE.MeshBasicMaterial({ map: loveTex, transparent: true, blending: THREE.AdditiveBlending });
-            loveMesh = new THREE.Mesh(new THREE.PlaneGeometry(70, 18), loveMat);
+            loveMesh = new THREE.Mesh(new THREE.PlaneGeometry(120, 18), loveMat);
             loveMesh.position.set(0, 0, 20);
             loveMesh.visible = false;
             scene.add(loveMesh);
